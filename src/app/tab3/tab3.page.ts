@@ -7,7 +7,11 @@ import { SenhasService } from '../services/senhas.service';
   styleUrls: ['tab3.page.scss']
 })
 export class Tab3Page {
-
+  deletarTudo() {
+    this.senhasService.senhasArray['SP'] = []
+    this.senhasService.senhasArray['SE'] = []
+    this.senhasService.senhasArray['SG'] = []
+  }
   constructor(public senhasService: SenhasService) {
 
   }
